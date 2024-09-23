@@ -7,55 +7,128 @@
 
 body{
     margin: 0;
+    background-color: rgb(3, 1, 1);
 }
 
 .bold{
     font-weight: 700;
 }
 
+a{
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    color: white;
+}
+
+.loog:hover{
+    color: red;
+}
+
 .start-container{
-    margin: auto auto;
+    margin: 15px auto;
     width: 40%;
     height: 80vh;
-    background-color: black;
+    background-color: rgb(3, 1, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px rgba(233, 4, 4, 0.5);
+    
+    
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 30%;
+    margin: auto;
+    margin-bottom: 1%;
+
+}
+
+#results{
+    color: white;
+    width: 100%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    margin: auto;
+}
+
+.results-display{
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    gap: 10px;
 }
 
 .btn{
     margin: auto;
-    margin-bottom: 10%;
-    width: 25%;
-    height: 15%;
+    margin-bottom: 5%;
+    width: 30%;
+    height: 30%;
     text-align: center;
     font-size: medium;
+    border: 1px solid black;
+    border-radius: 10%;
+    background-color: rgb(201, 10, 29);
+    color: white;
 }
 
 .btn:hover{
-    color: blue;
+    color: red;
+    background-color: white;
     cursor: pointer;
 }
 
+
 footer{
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     border: 0.5px solid black;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 10px;
+    
+}
+.credits {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.credits{
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
-    border-radius: 50%;
+.credits a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
 }
 
-a{
-    text-decoration: none;
+.credits:hover {
+    background-color: white;
+    color: red;
+}
+
+.credits a:hover {
+    color: red;
 }

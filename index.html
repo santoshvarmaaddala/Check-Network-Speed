@@ -6,17 +6,33 @@
         <meta name="author" content="Santosh Varma Addala">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
         <meta>
     </head>
     <body>
         <main>
+
             <div class="start-container">
-                <button class="btn bold">Start Your Test</button>
+                <div class="logo">
+                    <h1>Network Speed Test</h1>
+                </div>
+                <div id="results">
+                    <dotlottie-player src="https://lottie.host/7d587bf1-b9a5-47f4-99e0-4ee8a71ab4c9/oP57T4D0Zg.json" class="meter-logo" background="transparent" speed="1" style="width: 40%; height: 40%;" loop autoplay></dotlottie-player>
+                    <div class="results-display">
+                        <p class="bold">Download Speed: <span id="download"></span> mbps</p>
+                        <p class="bold">Upload Speed: <span id="upload"></span>mbps</p>
+                        <p class="bold">Ping: <span id="ping"></span>ms</p>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="btn bold" id="start-btn">Start Your Test</button>
+                    <button class="btn bold" id="refresh-btn">Restart</button>
+                </div>
             </div>
         </main>
         <footer>
-            <button class="credits"><a href="https://www.facebook.com">face</a></button>
-            <button class="credits"><a href="https://www.instagram.com">inst</a></button>
+            <button class="credits bold"><a href="https://www.facebook.com">face</a></button>
+            <button class="credits bold"><a href="https://www.instagram.com">inst</a></button>
         </footer>
         <script src="./script.js"></script>
     </body>
