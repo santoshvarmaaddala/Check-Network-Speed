@@ -19,21 +19,27 @@
                 <div id="results">
                     <dotlottie-player src="https://lottie.host/7d587bf1-b9a5-47f4-99e0-4ee8a71ab4c9/oP57T4D0Zg.json" class="meter-logo" background="transparent" speed="1" style="width: 40%; height: 40%;" loop autoplay></dotlottie-player>
                     <div class="results-display">
-                        <p class="bold">Download Speed:</p>
-                        <p class="bold">Upload Speed:</p>
-                        <p class="bold">Ping:</p>
+                        <div class="download bold">
+                            <p class="bold">Download Speed:</p>
+                            <div class="progression-circle bold" id="progression-circle">
+                                <span id="download-speed">0 Mbps</span>
+                            </div>
+                        </div>
+                        <div class="upload bold">
+                            <p class="bold">Upload Speed:</p>
+                            <div class="progression-circle bold" id="progression-circle">
+                                <span id="upload-speed">0 Mbps</span>
+                            </div>
+                        </div>
+                        <div class="ping bold">
+                            <p class="bold">Ping:</p>
+                            <div class="pingbox bold" id="pingbox">
+                                <span id="ping-value">0 Mbps</span>
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div class="analytics">
-                        <div class="progression-circle bold" id="progression-circle">
-                            <span id="download-speed">0 Mbps</span>
-                        </div>
-                        <div class="progression-circle bold" id="progression-circle">
-                            <span id="upload-speed">0 Mbps</span>
-                        </div>
-                        <div class="pingbox bold" id="pingbox">
-                            <span id="ping-value">0 Mbps</span>
-                        </div>
-                    </div>  
+ 
                 </div>
                 <div class="button">
                     <button class="btn bold" id="start-btn">Start Your Test</button>

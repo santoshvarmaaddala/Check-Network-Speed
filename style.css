@@ -75,6 +75,14 @@ main{
     font-size: larger;
 }
 
+.download, .upload, .ping{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 30px;
+}
+
 .btn{
     margin: auto;
     margin-bottom: 5%;
@@ -139,14 +147,6 @@ footer{
 }
 
 
-/* analytics = progression circle animation + display box */
-.analytics{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    color: black;
-}
 
 .progression-circle{
     width: 100px;
